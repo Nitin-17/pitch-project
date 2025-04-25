@@ -1,9 +1,8 @@
-import { UserIcon } from "lucide-react";
 import { defineField, defineType } from "sanity";
 
 export const playlist = defineType({
   name: "playlist",
-  title: "Playlist",
+  title: "Playlists",
   type: "document",
   fields: [
     defineField({
@@ -17,7 +16,6 @@ export const playlist = defineType({
         source: "title",
       },
     }),
-
     defineField({
       name: "select",
       type: "array",
