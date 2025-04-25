@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "easymde/dist/easymde.min.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = localFont({
   variable: "--font-poppins",
@@ -56,6 +57,7 @@ export default function RootLayout({
           suppressHydrationWarning
         >
           {children}
+          <Toaster />
         </body>
       </html>
     </>
